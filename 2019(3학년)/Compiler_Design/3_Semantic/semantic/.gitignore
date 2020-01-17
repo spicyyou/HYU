@@ -1,0 +1,9 @@
+.DS_Store
+
+cminus
+tm
+cminus_flex
+lex.yy.c
+lex.yy.o
+*.o
+

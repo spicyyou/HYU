@@ -1,0 +1,8 @@
+int x(int y[]){
+		int a;
+		return a;
+}
+int main(void){
+		int z;
+		x(z);
+}
