@@ -54,10 +54,19 @@ tick은 trap.c코드 중 타이머 인터럽트가 발생할 때 증가됩니다
 또한 proc.c 마지막에 fcfs_ticks_adder(void)라는 pticks를 증가시키는 함수를 만들었고 이 함수를 trap.c에서 사용할 수 있도록 defs.h에 함수를 추가하였습니다.
 
 trap.c 에
-![11111111111111](/uploads/dcf864d582878abc3012dfbe67cd362c/11111111111111.PNG)
+
+![https://hconnect.hanyang.ac.kr/2019_ELE3021_12310/2019_ELE3021_2017030519/uploads/dcf864d582878abc3012dfbe67cd362c/11111111111111.PNG](https://hconnect.hanyang.ac.kr/2019_ELE3021_12310/2019_ELE3021_2017030519/uploads/dcf864d582878abc3012dfbe67cd362c/11111111111111.PNG)
 이 if문 안에서 fcfs_ticks_adder()함수를 실행시켰고 그 후 myproc()->pticks값이 100보다 크다면 myproc()->killed=1로 바꾸어 주어 프로세스를 강제종료시킵니다.
 
 ### 실행 결과
+
+![https://hconnect.hanyang.ac.kr/2019_ELE3021_12310/2019_ELE3021_2017030519/uploads/e4497df4d3f80db65ba266252c65cd6d/ans2.PNG]()
+
+![https://hconnect.hanyang.ac.kr/2019_ELE3021_12310/2019_ELE3021_2017030519/uploads/87a197a3cafc6b47e140222e529d01a3/ans1.PNG]()
+
+![https://hconnect.hanyang.ac.kr/2019_ELE3021_12310/2019_ELE3021_2017030519/uploads/f9ff6419a5dcfb8ba20b6eb533a1dc7f/ans3.PNG]()
+
+
 
 ##### test1
 
@@ -73,7 +82,8 @@ yield를 하더라도 먼저 생성된 프로세스가 먼저 cpu에 할당되�
 
 ##### test4
 
-![image](/uploads/3dd49b5b44e87d76e44406751439123b/image.png)
+![https://hconnect.hanyang.ac.kr/2019_ELE3021_12310/2019_ELE3021_2017030519/uploads/3dd49b5b44e87d76e44406751439123b/image.png]()
+
 모든 자식프로세스를 종료시킨다.
 
 
@@ -138,7 +148,7 @@ myproc()->pticks가 0이아니면 myproc()->pticks를 --해야한다. (for preve
 
 ### 실행 결과
 
-![완성](/uploads/da2f6fc908ed5b2123f6441be8d601d1/완성.PNG)
+![https://hconnect.hanyang.ac.kr/2019_ELE3021_12310/2019_ELE3021_2017030519/uploads/da2f6fc908ed5b2123f6441be8d601d1/%EC%99%84%EC%84%B1.PNG]()
 
 #### test1
 
